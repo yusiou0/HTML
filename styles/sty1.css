@@ -1,0 +1,34 @@
+ h2.stl{
+            color:green;
+            font-style: italic;
+        }
+        .st2{
+            color:purple;
+            text-decoration: underline;
+        }
+        .col1{
+            color:gray;
+        }
+        .col2{
+            color:brown;
+        }
+        .size1{
+            font-size: 2em;
+        }
+        .sty1{
+            font-style: italic;
+            
+        }
+        .sty2{
+            text-decoration: underline;
+        }
+
+        #col2{
+            color:green
+        }
+
+
+        p {
+            color:gray;
+            font-size: 2em;
+        }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        .tb1 {
+            width: 400px;
+            border: 3px solid blue;
+            border-collapse: collapse;
+        }
+
+        td,th {
+            border: 1px solid olive;
+        }
+        thead{
+            background-color: gold;
+            color:black;
+            text-transform: capitalize;
+        }
+        tbody{
+            background-color: pink;
+            text-align: center;
+        }
+        tbody tr:nth-child(2n){
+            background-color:brown;
+        }
+        tbody tr:nth-child(2n+1){
+            background-color:blueviolet;
+        }
+        tbody tr:hover{
+            background-color: green;
+            color:red;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <h2>div裡文字水平對齊</h2>
+    <div style="width: 150px; height: 100px; border: 1px  solid red; line-height: 100px;">高度有指定</div>
+    <hr>
+    <div style="width:150px; border:1px solid green; padding-top:50px; padding-bottom:50px;">高度沒指定</div>
+<!-- 紅框因為高度有限制，且line-height是用行高減掉字高；綠框無高度限制padding(字體與border之間的距離)可以穩穩的就是50px -->
+
+
+
+    <table class="tb1">
+        <caption><h2>表格練習</h2></caption>
+        <thead>
+
+
+            <tr>
+                <th>colum1</th>
+                <th>colum2</th>
+                <th>colum3</th>
+                <th>colum4</th>
+            </tr>
+            <tr>
+                <th colspan="2">colum1</th>
+                <!-- <th>colum2</th> -->
+                <th colspan="2">colum3</th>
+                <!-- <th>colum4</th> -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td colspan="3">2</td>
+                <!-- <td>3</td>
+            <td>4</td> -->
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <!-- <td>3</td> -->
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

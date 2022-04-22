@@ -1,0 +1,19 @@
+
+
+@font-face{
+    src: url(../fonts/JustOldFashion.ttf);
+    font-family: justold;
+}
+.font1{
+  font-family: justold;
+}
+@font-face{
+    src: url(../fonts/SCRIPTIN.ttf);
+    font-family: scriptin;
+}
+.font2{
+  font-family: scriptin;
+}
+.p1{
+  font-family: 'Whisper', cursive;
+}

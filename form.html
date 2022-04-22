@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單</title>
+    <style>
+        .st1 {
+            width: 450px;
+            border-bottom: 3px dashed grey;
+            padding-bottom: 20px;
+            margin: 20px;
+        }
+
+        .sub {
+            width: 450px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .t1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            width: 500px;
+            border: 1px solid blue;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        legend {
+            color: brown;
+            /* text-align: center; */
+            margin-left: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>個人資料1<em>(必填)</em></legend>
+            <div class="st1">
+                <label for="account1" class="t1">姓名:</label><input type="text" id="account1" name="account" autofocus placeholder="guest" autocomplete="off" size="10">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">性別</label>
+                <input type="radio" name="gender" value="male" id="m1"><label for="m1">男</label>
+                <label>
+                    <input type="radio" name="gender" value="female" id="">女
+                </label>
+            </div>
+            <div class="st1">
+                <label for="psw1" class="t1">密碼:</label><input type="password" id="psw1" name="pwd" maxlength="6">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">生日</label>
+                <input type="date" name="birth1" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">E-mail</label>
+                <input type="email" name="mail1" id="">
+            </div>
+            <div class="st1">
+                <label for="" class="t1">身分證字號</label>
+                <input type="text" name="idcode1" id="" pattern="[a-z,A-Z]{1}[1-2,8-9]{1}\d{8}" size="10">
+            </div>
+
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>地址資料<em>(必填)</em></legend>
+
+            <div class="st1">
+                <label for="" class="t1">縣市:</label>
+                <select name="add1" multiple>
+                    <option value="TPE">台北市</option>
+                    <option value="TPH" selected>新北市</option>
+                    <option value="TYU">桃園市</option>
+                </select>
+            </div>
+            <div class="st1">
+                <label for="" class="t1">完整地址:</label>
+                <input type="text" name="add2" size="30" readonly>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>個人資料2<em>(必填)</em></legend>
+
+            <div class="st1">
+                <label for="" class="t1">照片</label>
+                <input type="file" name="file1" id="" multiple>
+            </div>
+            <div class="st1">
+                <label for="" class="t1">SNS</label>
+                <input type="url" name="hplist" list="urllist">
+                <datalist id="urllist">
+                    <option value="http://www.facebook.com">臉書</option>
+                    <option value="http://www.instergram.com"></option>
+                </datalist>
+            </div>
+
+
+            <div class="st1">
+                <label for="" class="t1">興趣:</label>
+                <label>
+                    <input type="checkbox" name="interest" value="sport" id="">運動
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value="travel" id="">旅遊
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value="reading" id="">閱讀
+                </label>
+            </div>
+
+            <div class="st1">
+                <label for="comment1" class="t1">意見:</label><textarea name="comment" id="comment1" cols="40"
+                    rows="5"></textarea>
+            </div>
+        </fieldset>
+
+
+        <div class="sub">
+            <input type="submit" value="送出">
+            <input type="reset" value="清除">
+        </div>
+
+
+    </form>
+
+
+
+</body>
+
+</html>
